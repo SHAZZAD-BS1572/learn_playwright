@@ -1,34 +1,34 @@
-import test, { expect } from "@playwright/test";
+// import test from "@playwright/test";
 
+// test("basic test", async ({ page }) => {
+//   await page.goto(
+//     "https://www.lambdatest.com/selenium-playground/select-dropdown-demo"
+//   );
+//   await page.waitForTimeout(5000);
+//   const element = page.locator("#multi-select");
+//   await element.click();
+//   await page.waitForTimeout(5000);
+//   // await element.selectOption({ value: "Texas" });
+//   await element.click();
 
-test('PromptMe', async ({ page }) => {
-    await page.goto('https://qavbox.github.io/demo/alerts/');
-    
-    let aleartMessage = "";
-    let promptText = "";
-
-    page.on('dialog', async (dialog) => {
-        // await page.waitForTimeout(5000);
-        aleartMessage = await dialog.message();
-        
-        promptText = "Shazzad";
-        await dialog.accept(promptText);
-    });
-
-    await Promise.all([
-        page.waitForSelector("#prompt"), 
-        page.click("#prompt") 
-    ]);
-
-    await page.waitForTimeout(5000); 
-    
-    expect(aleartMessage).toBe('Please enter your name');
-
-    await page.waitForTimeout(2000);
-
-    const paragraph = await page.locator("//p[@id='Parademo']");
-    expect(await paragraph.textContent()).toBe("Hello Shazzad! How are you today?");
-});
-
+//   await element.selectOption({ value: "Pennsylvania" });
+//   await page.waitForTimeout(5000);
+//   await page.click("//button[@id='printAll']");
+//   await page.waitForTimeout(5000);
+// });
 
 //npm test test.spec.ts
+
+import test from "@playwright/test";
+
+test("basic test", async ({ page }) => {
+  await page.goto(
+    "https://www.myutrx.com/products/dropdown-demo"
+  );
+  await page.waitForTimeout(5000);
+  const element = page.locator("//select[@class='pf-variant-select']");
+  await element.click();
+  await element.selectOption({ value: "2 PACK ($10 off)" });
+  await page.click("//span[normalize-space()='ADD TO CART']");
+  await page.waitForTimeout(5000);
+});
