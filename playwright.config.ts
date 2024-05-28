@@ -7,6 +7,7 @@ const config: PlaywrightTestConfig = {
     "/tests/basicInteractions.spec.ts",
     "/tests/alerts.spec.ts",
     "/tests/frames.spec.ts",
+    "/tests/windows.spec.ts"
   ],
 
   use: {
