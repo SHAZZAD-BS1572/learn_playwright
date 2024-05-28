@@ -7,23 +7,24 @@ const config: PlaywrightTestConfig = {
     "/tests/basicInteractions.spec.ts",
     "/tests/alerts.spec.ts",
     "/tests/frames.spec.ts",
-    "/tests/windows.spec.ts"
+    "/tests/windows.spec.ts",
+    "/tests/calendar.spec.ts",
   ],
 
   use: {
     headless: false,
     viewport: { width: 1536, height: 730 },
-    
-    // screenshot: "on",
-    // video:"on"
+
+    screenshot: "on",
+    video:"on"
   },
-  // retries:0,
-  // reporter: [["dot"], ["json", {
-  //     outputFile:"jsonReport/jsonReport.json"
-  // }], ["html", {
-  //     outputFile: "htmlReport/htmlReport.html",
-  //     open:"never"
-  // }]]
+  retries:0,
+  reporter: [["dot"], ["json", {
+      outputFile:"jsonReport/jsonReport.json"
+  }], ["html", {
+      outputFile: "htmlReport/htmlReport.html",
+      open:"never"
+  }]]
 };
 
 export default config;

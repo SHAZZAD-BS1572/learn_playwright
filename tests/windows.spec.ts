@@ -24,8 +24,8 @@ test("Interact with multiple tabs", async ({ page }) => {
     faceBookPage = multiplePopup[index];
   }
 
-  const text = await faceBookPage.textContent("//h1");
-  console.log(text);
+//   const text = await faceBookPage.textContent("//h1");
+//   console.log(text);
 
   //   const [newWindow] = await Promise.all([
   //     page.waitForEvent("popup"),
