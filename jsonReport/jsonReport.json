@@ -55,7 +55,8 @@
           "/tests/alerts.spec.ts",
           "/tests/frames.spec.ts",
           "/tests/windows.spec.ts",
-          "/tests/calendar.spec.ts"
+          "/tests/calendar.spec.ts",
+          "/tests/test.spec.ts"
         ],
         "timeout": 30000
       }
@@ -68,13 +69,13 @@
   },
   "suites": [
     {
-      "title": "tests\\calendar.spec.ts",
-      "file": "tests/calendar.spec.ts",
+      "title": "tests\\test.spec.ts",
+      "file": "tests/test.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Calendar Demo Using moment",
+          "title": "basic auth test",
           "ok": true,
           "tags": [],
           "tests": [
@@ -88,29 +89,26 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 15447,
+                  "duration": 9880,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "\u001b[33mtrue\u001b[39m\n"
-                    },
-                    {
-                      "text": "\u001b[33mfalse\u001b[39m\n"
+                      "text": "\n    Congratulations! You must have the proper credentials.\n  \n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-05-28T13:17:45.526Z",
+                  "startTime": "2024-05-28T14:14:18.289Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "a:\\learn_playwright\\test-results\\tests-calendar-Calendar-Demo-Using-moment\\test-finished-1.png"
+                      "path": "a:\\learn_playwright\\test-results\\tests-test-basic-auth-test\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "a:\\learn_playwright\\test-results\\tests-calendar-Calendar-Demo-Using-moment\\video.webm"
+                      "path": "a:\\learn_playwright\\test-results\\tests-test-basic-auth-test\\video.webm"
                     }
                   ]
                 }
@@ -118,9 +116,9 @@
               "status": "expected"
             }
           ],
-          "id": "082c1befd1b682c3964e-37e3cde580af8bfd80ea",
-          "file": "tests/calendar.spec.ts",
-          "line": 17,
+          "id": "e0e5c6321cedaeb39e74-3e4f628c376b9aaafa13",
+          "file": "tests/test.spec.ts",
+          "line": 29,
           "column": 5
         }
       ]
@@ -128,8 +126,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-05-28T13:17:44.453Z",
-    "duration": 17017.088000000003,
+    "startTime": "2024-05-28T14:14:17.241Z",
+    "duration": 11393.007000000001,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
