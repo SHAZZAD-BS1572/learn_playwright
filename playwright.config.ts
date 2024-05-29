@@ -10,6 +10,7 @@ const config: PlaywrightTestConfig = {
     "/tests/windows.spec.ts",
     "/tests/calendar.spec.ts",
     "/tests/test.spec.ts",
+    "/tests/uploadDownload.spec.ts",
   ],
 
   use: {

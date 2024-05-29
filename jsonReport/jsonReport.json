@@ -56,7 +56,8 @@
           "/tests/frames.spec.ts",
           "/tests/windows.spec.ts",
           "/tests/calendar.spec.ts",
-          "/tests/test.spec.ts"
+          "/tests/test.spec.ts",
+          "/tests/uploadDownload.spec.ts"
         ],
         "timeout": 30000
       }
@@ -69,13 +70,13 @@
   },
   "suites": [
     {
-      "title": "tests\\test.spec.ts",
-      "file": "tests/test.spec.ts",
+      "title": "tests\\uploadDownload.spec.ts",
+      "file": "tests/uploadDownload.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "basic auth test",
+          "title": "Upload File",
           "ok": true,
           "tags": [],
           "tests": [
@@ -89,26 +90,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 9880,
+                  "duration": 6823,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "\n    Congratulations! You must have the proper credentials.\n  \n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-05-28T14:14:18.289Z",
+                  "startTime": "2024-05-29T09:25:58.928Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "a:\\learn_playwright\\test-results\\tests-test-basic-auth-test\\test-finished-1.png"
+                      "path": "a:\\learn_playwright\\test-results\\tests-uploadDownload-Upload-File\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "a:\\learn_playwright\\test-results\\tests-test-basic-auth-test\\video.webm"
+                      "path": "a:\\learn_playwright\\test-results\\tests-uploadDownload-Upload-File\\video.webm"
                     }
                   ]
                 }
@@ -116,9 +113,9 @@
               "status": "expected"
             }
           ],
-          "id": "e0e5c6321cedaeb39e74-3e4f628c376b9aaafa13",
-          "file": "tests/test.spec.ts",
-          "line": 29,
+          "id": "507a1dfc022a86f2c5ba-b7d51c253399a74928d4",
+          "file": "tests/uploadDownload.spec.ts",
+          "line": 28,
           "column": 5
         }
       ]
@@ -126,8 +123,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-05-28T14:14:17.241Z",
-    "duration": 11393.007000000001,
+    "startTime": "2024-05-29T09:25:57.838Z",
+    "duration": 8350.887,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
