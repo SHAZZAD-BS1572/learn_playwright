@@ -12,9 +12,11 @@ const config: PlaywrightTestConfig = {
     "/tests/test.spec.ts",
     "/tests/uploadDownload.spec.ts",
     "/tests/uploadDemo.spec.ts",
+    "/pomTest/addToCart.spec.ts",
   ],
 
   use: {
+    baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
     headless: false,
     viewport: { width: 1536, height: 730 },
 

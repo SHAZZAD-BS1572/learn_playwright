@@ -58,7 +58,8 @@
           "/tests/calendar.spec.ts",
           "/tests/test.spec.ts",
           "/tests/uploadDownload.spec.ts",
-          "/tests/uploadDemo.spec.ts"
+          "/tests/uploadDemo.spec.ts",
+          "/pomTest/addToCart.spec.ts"
         ],
         "timeout": 30000
       }
@@ -71,14 +72,14 @@
   },
   "suites": [
     {
-      "title": "tests\\uploadDemo.spec.ts",
-      "file": "tests/uploadDemo.spec.ts",
+      "title": "pomTest\\addToCart.spec.ts",
+      "file": "pomTest/addToCart.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Add file, Start upload, Cancel upload, Delete selected",
-          "ok": true,
+          "title": "Login test_02",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -89,34 +90,58 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 9,
-                  "status": "passed",
-                  "duration": 28329,
-                  "errors": [],
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 4243,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mMy \u001b[27mAccount\"\u001b[39m\nReceived: \u001b[31m\"Account\u001b[7m Login\u001b[27m\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mMy \u001b[27mAccount\"\u001b[39m\nReceived: \u001b[31m\"Account\u001b[7m Login\u001b[27m\"\u001b[39m\n    at a:\\learn_playwright\\pomTest\\addToCart.spec.ts:30:30",
+                    "location": {
+                      "file": "a:\\learn_playwright\\pomTest\\addToCart.spec.ts",
+                      "column": 30,
+                      "line": 30
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39menterPassword(password)\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mclickinBtn()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 30 |\u001b[39m   expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"My Account\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 31 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "a:\\learn_playwright\\pomTest\\addToCart.spec.ts",
+                        "column": 30,
+                        "line": 30
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mMy \u001b[27mAccount\"\u001b[39m\nReceived: \u001b[31m\"Account\u001b[7m Login\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39menterPassword(password)\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mclickinBtn()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 30 |\u001b[39m   expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"My Account\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 31 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at a:\\learn_playwright\\pomTest\\addToCart.spec.ts:30:30\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-05-29T10:39:44.429Z",
+                  "startTime": "2024-05-29T14:25:17.940Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "a:\\learn_playwright\\test-results\\tests-uploadDemo-Add-file--068ef-ncel-upload-Delete-selected\\test-finished-1.png"
+                      "path": "a:\\learn_playwright\\test-results\\pomTest-addToCart-Login-test-02\\test-failed-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "a:\\learn_playwright\\test-results\\tests-uploadDemo-Add-file--068ef-ncel-upload-Delete-selected\\video.webm"
+                      "path": "a:\\learn_playwright\\test-results\\pomTest-addToCart-Login-test-02\\video.webm"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "a:\\learn_playwright\\pomTest\\addToCart.spec.ts",
+                    "column": 30,
+                    "line": 30
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "603056460293134a7796-59922765243228819ef2",
-          "file": "tests/uploadDemo.spec.ts",
-          "line": 3,
+          "id": "8c73adda85f0d3da33d1-463c986489e85c25e321",
+          "file": "pomTest/addToCart.spec.ts",
+          "line": 24,
           "column": 5
         }
       ]
@@ -124,11 +149,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-05-29T10:39:43.388Z",
-    "duration": 29863.094999999972,
-    "expected": 1,
+    "startTime": "2024-05-29T14:25:16.872Z",
+    "duration": 5754.983,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
