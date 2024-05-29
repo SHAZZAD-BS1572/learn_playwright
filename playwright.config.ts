@@ -11,6 +11,7 @@ const config: PlaywrightTestConfig = {
     "/tests/calendar.spec.ts",
     "/tests/test.spec.ts",
     "/tests/uploadDownload.spec.ts",
+    "/tests/uploadDemo.spec.ts",
   ],
 
   use: {

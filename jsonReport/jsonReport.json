@@ -57,7 +57,8 @@
           "/tests/windows.spec.ts",
           "/tests/calendar.spec.ts",
           "/tests/test.spec.ts",
-          "/tests/uploadDownload.spec.ts"
+          "/tests/uploadDownload.spec.ts",
+          "/tests/uploadDemo.spec.ts"
         ],
         "timeout": 30000
       }
@@ -70,13 +71,13 @@
   },
   "suites": [
     {
-      "title": "tests\\uploadDownload.spec.ts",
-      "file": "tests/uploadDownload.spec.ts",
+      "title": "tests\\uploadDemo.spec.ts",
+      "file": "tests/uploadDemo.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Upload File",
+          "title": "Add file, Start upload, Cancel upload, Delete selected",
           "ok": true,
           "tags": [],
           "tests": [
@@ -88,24 +89,24 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 9,
                   "status": "passed",
-                  "duration": 6823,
+                  "duration": 28329,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-05-29T09:25:58.928Z",
+                  "startTime": "2024-05-29T10:39:44.429Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "a:\\learn_playwright\\test-results\\tests-uploadDownload-Upload-File\\test-finished-1.png"
+                      "path": "a:\\learn_playwright\\test-results\\tests-uploadDemo-Add-file--068ef-ncel-upload-Delete-selected\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "a:\\learn_playwright\\test-results\\tests-uploadDownload-Upload-File\\video.webm"
+                      "path": "a:\\learn_playwright\\test-results\\tests-uploadDemo-Add-file--068ef-ncel-upload-Delete-selected\\video.webm"
                     }
                   ]
                 }
@@ -113,9 +114,9 @@
               "status": "expected"
             }
           ],
-          "id": "507a1dfc022a86f2c5ba-b7d51c253399a74928d4",
-          "file": "tests/uploadDownload.spec.ts",
-          "line": 28,
+          "id": "603056460293134a7796-59922765243228819ef2",
+          "file": "tests/uploadDemo.spec.ts",
+          "line": 3,
           "column": 5
         }
       ]
@@ -123,8 +124,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-05-29T09:25:57.838Z",
-    "duration": 8350.887,
+    "startTime": "2024-05-29T10:39:43.388Z",
+    "duration": 29863.094999999972,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
