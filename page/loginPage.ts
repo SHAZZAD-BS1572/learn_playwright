@@ -14,4 +14,10 @@ export default class LoginPage {
   async clickinBtn() {
     await this.page.click("//input[@value='Login']");
   }
+
+  async login(email: string, password: string) {
+    await this.enterEmail(email);
+    await this.enterPassword(password);
+    await this.clickinBtn();
+  }
 }

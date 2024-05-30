@@ -12,7 +12,9 @@ const config: PlaywrightTestConfig = {
     "/tests/test.spec.ts",
     "/tests/uploadDownload.spec.ts",
     "/tests/uploadDemo.spec.ts",
-    "/page/addtoCart01.spec.ts",
+    "/pomTest/addtoCart01.spec.ts",
+    "/pomTest/addtoCart01UsingFixter.spec.ts",
+    "/pomTest/addtoCart01UsingJsonData.spec.ts",
   ],
 
   use: {

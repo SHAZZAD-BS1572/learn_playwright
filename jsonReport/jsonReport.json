@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "A:\\learn_playwright\\playwright.config.ts",
-    "rootDir": "A:/learn_playwright",
+    "configFile": "a:\\learn_playwright\\playwright.config.ts",
+    "rootDir": "a:/learn_playwright",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -40,13 +40,13 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "A:/learn_playwright/test-results",
+        "outputDir": "a:/learn_playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "",
         "name": "",
-        "testDir": "A:/learn_playwright",
+        "testDir": "a:/learn_playwright",
         "testIgnore": [],
         "testMatch": [
           "/tests/login.spec.ts",
@@ -59,7 +59,9 @@
           "/tests/test.spec.ts",
           "/tests/uploadDownload.spec.ts",
           "/tests/uploadDemo.spec.ts",
-          "/page/addtoCart01.spec.ts"
+          "/pomTest/addtoCart01.spec.ts",
+          "/pomTest/addtoCart01UsingFixter.spec.ts",
+          "/pomTest/addtoCart01UsingJsonData.spec.ts"
         ],
         "timeout": 30000
       }
@@ -72,13 +74,13 @@
   },
   "suites": [
     {
-      "title": "page\\addtoCart01.spec.ts",
-      "file": "page/addtoCart01.spec.ts",
+      "title": "tests\\calendar.spec.ts",
+      "file": "tests/calendar.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Regester test_01",
+          "title": "Calendar Demo Using moment",
           "ok": true,
           "tags": [],
           "tests": [
@@ -90,24 +92,31 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 1,
                   "status": "passed",
-                  "duration": 6845,
+                  "duration": 21284,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[33mtrue\u001b[39m\n"
+                    },
+                    {
+                      "text": "\u001b[33mfalse\u001b[39m\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-05-30T08:31:55.114Z",
+                  "startTime": "2024-05-30T11:04:59.908Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "A:\\learn_playwright\\test-results\\page-addtoCart01-Regester-test-01\\test-finished-1.png"
+                      "path": "a:\\learn_playwright\\test-results\\tests-calendar-Calendar-Demo-Using-moment\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "A:\\learn_playwright\\test-results\\page-addtoCart01-Regester-test-01\\video.webm"
+                      "path": "a:\\learn_playwright\\test-results\\tests-calendar-Calendar-Demo-Using-moment\\video.webm"
                     }
                   ]
                 }
@@ -115,95 +124,9 @@
               "status": "expected"
             }
           ],
-          "id": "308cb27af9196dcad7c3-4adc1cc4fd38041345cf",
-          "file": "page/addtoCart01.spec.ts",
-          "line": 9,
-          "column": 5
-        },
-        {
-          "title": "Login test_02",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 5837,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-05-30T08:32:02.168Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "A:\\learn_playwright\\test-results\\page-addtoCart01-Login-test-02\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "A:\\learn_playwright\\test-results\\page-addtoCart01-Login-test-02\\video.webm"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "308cb27af9196dcad7c3-73be35f08274632086ae",
-          "file": "page/addtoCart01.spec.ts",
-          "line": 22,
-          "column": 5
-        },
-        {
-          "title": "Login test_03",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 17154,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-05-30T08:32:08.012Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "A:\\learn_playwright\\test-results\\page-addtoCart01-Login-test-03\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "A:\\learn_playwright\\test-results\\page-addtoCart01-Login-test-03\\video.webm"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "308cb27af9196dcad7c3-fda90de5813dafa96b72",
-          "file": "page/addtoCart01.spec.ts",
-          "line": 30,
+          "id": "082c1befd1b682c3964e-37e3cde580af8bfd80ea",
+          "file": "tests/calendar.spec.ts",
+          "line": 17,
           "column": 5
         }
       ]
@@ -211,9 +134,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-05-30T08:31:54.483Z",
-    "duration": 30927.443,
-    "expected": 3,
+    "startTime": "2024-05-30T11:04:58.822Z",
+    "duration": 22828.390000000014,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
