@@ -8,10 +8,10 @@ export default class LoginPage {
   }
 
   async enterPassword(passWord: string) {
-    await this.page.locator("//input[@id='input-email']").type(passWord);
+    await this.page.locator("//input[@id='input-password']").type(passWord);
   }
 
   async clickinBtn() {
-      await this.page.click("//input[@value='Login']");
+    await this.page.click("//input[@value='Login']");
   }
 }

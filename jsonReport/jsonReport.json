@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "a:\\learn_playwright\\playwright.config.ts",
-    "rootDir": "a:/learn_playwright",
+    "configFile": "A:\\learn_playwright\\playwright.config.ts",
+    "rootDir": "A:/learn_playwright",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -40,13 +40,13 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "a:/learn_playwright/test-results",
+        "outputDir": "A:/learn_playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "",
         "name": "",
-        "testDir": "a:/learn_playwright",
+        "testDir": "A:/learn_playwright",
         "testIgnore": [],
         "testMatch": [
           "/tests/login.spec.ts",
@@ -59,27 +59,27 @@
           "/tests/test.spec.ts",
           "/tests/uploadDownload.spec.ts",
           "/tests/uploadDemo.spec.ts",
-          "/pomTest/addToCart.spec.ts"
+          "/page/addtoCart01.spec.ts"
         ],
         "timeout": 30000
       }
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.44.0",
+    "version": "1.44.1",
     "workers": 4,
     "webServer": null
   },
   "suites": [
     {
-      "title": "pomTest\\addToCart.spec.ts",
-      "file": "pomTest/addToCart.spec.ts",
+      "title": "page\\addtoCart01.spec.ts",
+      "file": "page/addtoCart01.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Login test_02",
-          "ok": false,
+          "title": "Regester test_01",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -91,57 +91,119 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 4243,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mMy \u001b[27mAccount\"\u001b[39m\nReceived: \u001b[31m\"Account\u001b[7m Login\u001b[27m\"\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mMy \u001b[27mAccount\"\u001b[39m\nReceived: \u001b[31m\"Account\u001b[7m Login\u001b[27m\"\u001b[39m\n    at a:\\learn_playwright\\pomTest\\addToCart.spec.ts:30:30",
-                    "location": {
-                      "file": "a:\\learn_playwright\\pomTest\\addToCart.spec.ts",
-                      "column": 30,
-                      "line": 30
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39menterPassword(password)\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mclickinBtn()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 30 |\u001b[39m   expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"My Account\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 31 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "a:\\learn_playwright\\pomTest\\addToCart.spec.ts",
-                        "column": 30,
-                        "line": 30
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mMy \u001b[27mAccount\"\u001b[39m\nReceived: \u001b[31m\"Account\u001b[7m Login\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39menterPassword(password)\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mclickinBtn()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 30 |\u001b[39m   expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"My Account\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 31 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at a:\\learn_playwright\\pomTest\\addToCart.spec.ts:30:30\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 6845,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-05-29T14:25:17.940Z",
+                  "startTime": "2024-05-30T08:31:55.114Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "a:\\learn_playwright\\test-results\\pomTest-addToCart-Login-test-02\\test-failed-1.png"
+                      "path": "A:\\learn_playwright\\test-results\\page-addtoCart01-Regester-test-01\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "a:\\learn_playwright\\test-results\\pomTest-addToCart-Login-test-02\\video.webm"
+                      "path": "A:\\learn_playwright\\test-results\\page-addtoCart01-Regester-test-01\\video.webm"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "a:\\learn_playwright\\pomTest\\addToCart.spec.ts",
-                    "column": 30,
-                    "line": 30
-                  }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "8c73adda85f0d3da33d1-463c986489e85c25e321",
-          "file": "pomTest/addToCart.spec.ts",
-          "line": 24,
+          "id": "308cb27af9196dcad7c3-4adc1cc4fd38041345cf",
+          "file": "page/addtoCart01.spec.ts",
+          "line": 9,
+          "column": 5
+        },
+        {
+          "title": "Login test_02",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 5837,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-05-30T08:32:02.168Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "A:\\learn_playwright\\test-results\\page-addtoCart01-Login-test-02\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "A:\\learn_playwright\\test-results\\page-addtoCart01-Login-test-02\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "308cb27af9196dcad7c3-73be35f08274632086ae",
+          "file": "page/addtoCart01.spec.ts",
+          "line": 22,
+          "column": 5
+        },
+        {
+          "title": "Login test_03",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 17154,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-05-30T08:32:08.012Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "A:\\learn_playwright\\test-results\\page-addtoCart01-Login-test-03\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "A:\\learn_playwright\\test-results\\page-addtoCart01-Login-test-03\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "308cb27af9196dcad7c3-fda90de5813dafa96b72",
+          "file": "page/addtoCart01.spec.ts",
+          "line": 30,
           "column": 5
         }
       ]
@@ -149,11 +211,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-05-29T14:25:16.872Z",
-    "duration": 5754.983,
-    "expected": 0,
+    "startTime": "2024-05-30T08:31:54.483Z",
+    "duration": 30927.443,
+    "expected": 3,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

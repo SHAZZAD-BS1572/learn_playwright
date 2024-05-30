@@ -8,6 +8,4 @@ export default class HomePage {
       "//ul[@class='navbar-nav horizontal']//span[@class='title'][normalize-space()='Special']"
     );
   }
-
-  
 }

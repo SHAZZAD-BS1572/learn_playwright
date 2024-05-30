@@ -1,4 +1,4 @@
-import { Page } from '@playwright/test';
+import { Page } from "@playwright/test";
 
 export default class RegisterPage {
   constructor(public page: Page) {}
