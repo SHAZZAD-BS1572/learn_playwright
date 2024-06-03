@@ -16,8 +16,9 @@ export default class SpecialHotPage {
       { strict: false }
     );
 
+   
+
     await this.page.click("//button[@class='btn btn-cart cart-32']");
-        await this.page.waitForTimeout(5000)
 
   }
   

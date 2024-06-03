@@ -1,0 +1,39 @@
+Error in clickMegaMenue: page.waitForSelector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('//span[normalize-space()=\'Mega Menu\']') to be visible
+
+    at SpecialHotPage.clickMegaMenue (a:\learn playwright\learn_playwright\page\specialHotPage.ts:10:23)
+    at a:\learn playwright\learn_playwright\testcase\tocart.spec.ts:8:21 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@9',
+    location: {
+      file: 'a:\\learn playwright\\learn_playwright\\page\\specialHotPage.ts',
+      line: 10,
+      column: 23,
+      function: 'SpecialHotPage.clickMegaMenue'
+    },
+    category: 'pw:api',
+    title: "page.waitForSelector(//span[normalize-space()='Mega Menu'])",
+    apiName: 'page.waitForSelector',
+    params: {
+      selector: "//span[normalize-space()='Mega Menu']",
+      timeout: 30000
+    },
+    wallTime: 1717411180619,
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1717411184361,
+    error: {
+      message: 'Error: page.waitForSelector: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        "  \x1B[2m- waiting for locator('//span[normalize-space()=\\'Mega Menu\\']') to be visible\x1B[22m\n",
+      stack: 'Error: page.waitForSelector: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        "  \x1B[2m- waiting for locator('//span[normalize-space()=\\'Mega Menu\\']') to be visible\x1B[22m\n" +
+        '\n' +
+        '    at SpecialHotPage.clickMegaMenue (a:\\learn playwright\\learn_playwright\\page\\specialHotPage.ts:10:23)\n' +
+        '    at a:\\learn playwright\\learn_playwright\\testcase\\tocart.spec.ts:8:21'
+    }
+  }
+}

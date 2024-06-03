@@ -1,1 +1,1 @@
-Hi! I am Shazzad
+allure generate allure-results -o allure-report --clean

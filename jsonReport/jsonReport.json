@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "a:\\learn_playwright\\playwright.config.ts",
-    "rootDir": "a:/learn_playwright",
+    "configFile": "a:\\learn playwright\\learn_playwright\\playwright.config.ts",
+    "rootDir": "a:/learn playwright/learn_playwright",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -15,6 +15,10 @@
     },
     "preserveOutput": "always",
     "reporter": [
+      [
+        "a:\\learn playwright\\learn_playwright\\node_modules\\allure-playwright\\dist\\index.js",
+        null
+      ],
       [
         "dot",
         null
@@ -40,28 +44,16 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "a:/learn_playwright/test-results",
+        "outputDir": "a:/learn playwright/learn_playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
-        "id": "",
-        "name": "",
-        "testDir": "a:/learn_playwright",
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "a:/learn playwright/learn_playwright",
         "testIgnore": [],
         "testMatch": [
-          "/tests/login.spec.ts",
-          "/tests/recordPart3.spec.ts",
-          "/tests/basicInteractions.spec.ts",
-          "/tests/alerts.spec.ts",
-          "/tests/frames.spec.ts",
-          "/tests/windows.spec.ts",
-          "/tests/calendar.spec.ts",
-          "/tests/test.spec.ts",
-          "/tests/uploadDownload.spec.ts",
-          "/tests/uploadDemo.spec.ts",
-          "/pomTest/addtoCart01.spec.ts",
-          "/pomTest/addtoCart01UsingFixter.spec.ts",
-          "/pomTest/addtoCart01UsingJsonData.spec.ts"
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
         "timeout": 30000
       }
@@ -74,69 +66,114 @@
   },
   "suites": [
     {
-      "title": "tests\\calendar.spec.ts",
-      "file": "tests/calendar.spec.ts",
+      "title": "pomTest\\addtoCart01UsingJsonData.spec.ts",
+      "file": "pomTest/addtoCart01UsingJsonData.spec.ts",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Calendar Demo Using moment",
-          "ok": true,
-          "tags": [],
-          "tests": [
+          "title": "Page object test demo",
+          "file": "pomTest/addtoCart01UsingJsonData.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
+              "title": "Login test_02",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 21284,
-                  "errors": [],
-                  "stdout": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
                     {
-                      "text": "\u001b[33mtrue\u001b[39m\n"
-                    },
-                    {
-                      "text": "\u001b[33mfalse\u001b[39m\n"
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 5821,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-06-03T10:50:14.199Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "a:\\learn playwright\\learn_playwright\\test-results\\pomTest-addtoCart01UsingJs-9664f-ect-test-demo-Login-test-02-chrome\\test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "a:\\learn playwright\\learn_playwright\\test-results\\pomTest-addtoCart01UsingJs-9664f-ect-test-demo-Login-test-02-chrome\\video.webm"
+                        }
+                      ]
                     }
                   ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-05-30T11:04:59.908Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "a:\\learn_playwright\\test-results\\tests-calendar-Calendar-Demo-Using-moment\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "a:\\learn_playwright\\test-results\\tests-calendar-Calendar-Demo-Using-moment\\video.webm"
-                    }
-                  ]
+                  "status": "expected"
                 }
               ],
-              "status": "expected"
+              "id": "afd13c9a35dd070ec510-af85fa934d0a13e38b49",
+              "file": "pomTest/addtoCart01UsingJsonData.spec.ts",
+              "line": 25,
+              "column": 7
+            },
+            {
+              "title": "Login test_03",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 13201,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-06-03T10:50:20.293Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "a:\\learn playwright\\learn_playwright\\test-results\\pomTest-addtoCart01UsingJs-cfa4b-ect-test-demo-Login-test-03-chrome\\test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "a:\\learn playwright\\learn_playwright\\test-results\\pomTest-addtoCart01UsingJs-cfa4b-ect-test-demo-Login-test-03-chrome\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "afd13c9a35dd070ec510-7046f8d2c74db524935c",
+              "file": "pomTest/addtoCart01UsingJsonData.spec.ts",
+              "line": 30,
+              "column": 7
             }
-          ],
-          "id": "082c1befd1b682c3964e-37e3cde580af8bfd80ea",
-          "file": "tests/calendar.spec.ts",
-          "line": 17,
-          "column": 5
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-05-30T11:04:58.822Z",
-    "duration": 22828.390000000014,
-    "expected": 1,
+    "startTime": "2024-06-03T10:50:12.869Z",
+    "duration": 20894.608000000007,
+    "expected": 2,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
